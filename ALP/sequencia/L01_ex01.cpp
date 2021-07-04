@@ -1,3 +1,7 @@
+/* 
+  Exercício: Faça um algoritmo que receba 2 números inteiros e apresente a soma desses números.
+*/
+
 #include <iostream>
 
 int main() {
