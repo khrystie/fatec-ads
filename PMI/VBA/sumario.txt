@@ -1,6 +1,7 @@
 
 botaoMensagem - exibir mensagem ao clicar no botão e limpar mensagem 29/04
 estruturaDecisao - if then else 29/04
+estruturaRepeticao - laço for 10/05
 
 usando caixa de formulario
 
