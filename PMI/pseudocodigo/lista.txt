@@ -1,0 +1,724 @@
+CURSO SUPERIOR DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DISCIPLINA: PROGRAMAÇÃO EM MICROINFORMÁTICA - PMI PRIMEIRA LISTA DE EXERCÍCIOS – ALGORITMOS
+NOME: EQUIPE
+		 – CHRYSTIE
+		– MARCIA 
+ 
+EXERCICIO 1		
+PSEUDOCÓDIGO
+Variáveis de entrada 
+PRECO_P, QTDE_P, PRECO_B, QUANT_B, PORC_POUP
+Variáveis de saída
+ PRECO_P, PRECO_B, QTDE_B, TOTV_P, TOTV_B, TOT_V, PORC_POUP, POUP
+
+INICIO		
+	DECLARE QTD_P, QTD_B: inteiro	
+	PRECO_P, PRECO_B, PORC_POUP: real
+	TOTV_P, TOTV_B, POUP: real	
+	Escrever ("Entre preco dos paes")	
+	Ler(PRECO_P)	
+
+	Escrever ("Entre quantidade dos paes")	
+	Ler(QTDE_P)	
+
+	Escrever ("Entre preco de broas")
+	Ler(PRECO_B)	
+
+	Escrever("Entre quantidade de broas")	
+	Ler(QUANT_B)	
+
+	Escrever("Entre porcentagem poupanca")	
+	Ler(PORC_POUP)	
+
+	TOTV_P←QTDE_P * PRECO_P	
+	TOTV_B←QTDE_B * PRECO_B	
+	TOTV ←TOTV_P + TOTV_B	
+	POUP←(TOTV*PORC_POUP)/100
+	
+Escrever ("Preco paes R$", PRECO_P," Quantidades Paes ", QTDE_P)	
+Escrever ("Preco broas R$", PRECO_B,” Quantidade Broas ", QTDE_B)	
+Escrever ("Total arrecadacao de paes R$", TOTV_P)	
+Escrever ("Total arrecadacao broas R$", TOTV_B)	
+Escrever ("Total arrecadacao R$",TOT_V)	
+Escrever (“Porcentagem poupanca ", PORC_POUP,"% Total a pagar R$", POUP)	
+FIM
+TESTE DE MESA	        DADOS DE ENTRADA
+						R$ 0.50 
+						20	
+						R$ 1.00 
+						8	
+INICIO					15	
+			
+	Entre preco dos paes 0.50 <enter>	
+	Ler(PRECO_P)	PRECO_P  ←0,50
+	
+	Entre quantidade dos paes 20 <enter>	
+	Ler(QTDE_P)		QTDE_P←20 	
+	
+	Entre preco de broas 1.00 <enter>	
+	Ler (PRECO_B) 	PRECO_B←1,00	
+	
+	Entre quantidade de broas 8 <enter>	
+	Ler (QTDE_B) 	QTDE_B←8	
+	
+	Entre porcentagem poupanca 15 <enter>	
+	Ler (PORC_POUP)	PORC_POUP ← 15	
+	
+	TOTV_P ← QTDE_P * PRECO_P	
+	TOTV_P←20*0.50 TOTV_P ←10	
+	TOTV_B←QTDE_B * Preco_B	
+	TOTV_B← 8*1.00 TOTV_B←8	
+	TOTV←TOTV_P + TOTV_B	
+	TOTV←10+8 TOT_V←18	
+	POUP←(TOT_V*PORC_POUP)/100	
+	POUP←(18*15)/100	
+	POUP(270)/100 POUP←2.7	
+	
+	Preco paes R$0.50 Quantidade Paes 20	
+{CONTINUACAO TESTE DE MESA EX. 1}
+	Preco broas R$1.00 Quantidade Broas 8	
+	Total arrecadacao de paes R$10	
+	Total arrecadacao broas R$8	
+	Total arrecadacao R$18	
+	Porcentagem poupanca 15%  Total a poupar R$2.7	
+FIM		 
+EXERCICIO 2		
+PSEUDOCÓDIGO
+Variáveis de entrada 
+PRATO_P, PRATO_V
+Variáveis de saída
+PRATO_P, PRATO_V, TOT_V
+
+INICIO	
+	DECLARE PRATO_P, PRATO_V, 	TOT_V: real
+
+	Escrever ("Entre com o kg total do prato ")    
+	Ler(PRATO_P)
+
+	Escrever ("Entre com o valor do kg: R$ ")
+	Ler(PRATO_V)
+	
+	TOT_V← PRATO_P * PRATO_V
+	
+	Escrever(“Peso em kg: “, PRATO_P, " 	Preço/kg: R$ ", PRATO_V)
+	Escrever ("Preco a pagar: R$", TOT_V)
+FIM	
+	
+
+[CONSIDERAR PESO DO PRATO JÁ DESCONTADO]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	TESTE DE MESA
+	DADOS DE ENTRADA
+	prato 100gr
+R$12,00/kg
+
+INICIO
+
+	Entre com o kg total do prato 1.100 <enter>
+	Ler(PESO_P)	PESO_P ← 1.100 
+
+	Entre com o valor do kg: R$ 13.20<enter>
+	Ler(PRATO_V)	PRATO_V←R$13.20
+
+	TOT_V←PRATO_P*PRATO_V
+	TOT_V←1.100*12
+	TOV_V←13.20
+
+	Peso em kg: 1.100 Preco/kg: R$ 13,20
+	Preco a pagar: R$13.20
+FIM	
+ 
+EXERCÍCIO 3 
+PSEUDOCÓDIGO
+Variáveis de entrada: PRECO_P, QTDE_P, PRECO_M, QTDE_M, PRECO_G, QTDE_G
+Variáveis de saída: PRECO_P, QTDE_P, PRECO_M, QTDE_M, PRECO_G, QTDE_G, TOTV_P, TOTV_M, TOTV_G
+
+INICIO	
+	DECLARE QTDE_P, QTDE_M, QTDE_G: inteiro
+	PRECO_P, PRECO_M, PRECO_G: real
+	TOTV_P, TOTV_M, TOTV_G: real
+	
+Escrever ("Entre com o preço das camisetas tamanho P:  R$ ")
+Ler(PRECO_P)
+Escrever ("Entre com a quantidade de camisetas tamanho P: ")
+Ler(QTDE_P)
+Escrever ("Entre com preço das camisetas tamanho M: R$ ")
+Ler(PRECO_M)
+Escrever("Entre com a quantidade de camisetas tamanho M: ")
+Ler(QTDE_M)
+Escrever ("Entre com preço das camisetas de tamanho G: R$ ")
+Ler(PRECO_G)
+Escrever("Entre com a quantidade de camisetas tamanho G: ")
+Ler(QTDE_G)
+
+TOTV_P←QTDE_P * PRECO_P
+TOTV_M←QTDE _M * PRECO_M
+TOTV_G←QTDE_G* PRECO_G
+TOTV_T←TOTV_P+TOTV_M+TOTV_G
+
+Escrever(“Quantidade camisetas tam P: “, QTDE_P, “. Preço por unidade: R$”, PRECO_P)
+Escrever(“Quantidade camisetas tam M: “, QTDE_M, “. Preço por unidade: R$”, PRECO_M)
+Escrever(“Quantidade camisetas tam G: “, QTDE_G, “. Preço por unidade: R$”, PRECO_G)
+Escrever("Total arrecadacao camisetas tamanho P R$", TOTV_P)
+Escrever("Total arrecadacao camisetas tamanho M R$", TOTV_M)
+Escrever("Total arrecadacao camisetas tamanho G R$", TOTV_G)
+Escrever ("Total arrecadacao R$", TOTV_T)
+
+FIM		
+TESTE DE MESA		Dados de entrada
+				CAM_P R$10 // 10
+ 				CAM_M R$12 // “
+				CAM_G R$15  // “
+INICIO	
+
+
+Entre com o preço das camisetas tamanho P: R$ 10.00<enter>
+Ler(PRECO_P)	PRECO_P ← $10.00
+Entre com a quantidade de camisetas tamanho P: 10 <enter>
+Ler(QTDE_P)		QTDE_P ←10
+Entre com preço das camisetas tamanho M: R$ 12.00 <enter>
+Ler(PRECO_M)	PRECO_M←$12.00
+Entre com a quantidade de camisetas tamanho M:  10<enter>
+Ler(QTDE_M)	QTDE_M←10
+Entre com preço das camisetas de tamanho G: R$ 15.00 <enter>
+Ler(PRECO_G)	PRECO_G ← 15.00
+Entre com a quantidade de camisetas tamanho G: 10<enter>
+Ler(QTDE_G)	QTDE_G←10
+
+TOTV_P←QTDE_P * PRECO_P
+TOTV_P←10*10	TOTV_P ←100
+TOTV_M←QTDE_M * PRECO_M
+TOTV_M←10*12	TOTV_M←120
+TOTV_G←QTDE _G * PRECO_G
+TOTV_G←10*15	TOTV_G←150
+TOTV_T←TOTV_P + TOTV_M +TOTV_G	TOTV_T←100+120+150	
+			TOTV_T ←370
+	Quantidade camisetas tam P: 10. Preço por unidade: R$ 10
+	Quantidade camisetas tam M: 10. Preço por unidade: R$ 12
+	Quantidade camisetas tam G: 10. Preço por unidade: R$ 15
+{CONTINUACAO TESTE DE MESA EX. 3}
+	Total arrecadacao camisetas tamanho P R$100
+	Total arrecadacao camisetas tamanho M R$120
+	Total arrecadacao camisetas tamanho G R$150
+	Total arrecadacao R$370 
+FIM
+ 
+
+EXERCÍCIO 4
+PSEUDOCÓDIGO
+Variáveis de entrada: SAL, PORC_A, PORC_IMP
+Variáveis de saída: SAL, PORC_A, PORC_IMP, 
+VAL_A, SAL_A, VAL_IMP, SAL_F
+INICIO	
+	DECLARE  SAL, PORC_A, VAL_A, 		SAL_A, PORC_IMP, VAL_IMP, SAL_F:      	real 
+	
+ 	Escrever ("Entre valor do salário do 	funcionário R$")
+	Ler(SAL)
+
+Escrever ("Entre valor da porcentagem para o aumento ")
+	Ler(PORC_A) 
+
+	Escrever ("Entre porcentagem de impostos")
+	Ler(PORC_IMP)
+
+	VAL_A←(SAL *PORC_A)/100  
+	
+	SAL_A←SAL_F+ VAL_A
+
+	VAL_IMP←(SAL_A * PORC_IMP)/100
+
+	SAL_F ← SAL_F +VAL_A - VAL_IMP
+
+	Escrever (Salário Inicial R$ ", SAL)
+	Escrever ("O aumento de ",      	PORC_A, “% é de R$”, VAL_A)
+	Escrever(“O salário com o aumento é R$”,    SAL_A)
+	Escrever(“Desconto de imposto de “, 	PORC_IMP, “% no valor de R$”, 
+	Escrever ("Salario Final", SAL_F)
+FIM	
+
+
+
+
+
+
+
+
+
+
+	TESTE DE MESA
+DADOS DE ENTRADA			R$2000
+						15%
+						8% 
+INICIO
+Entre valor do salário do funcionário R$2000<enter>
+Ler(SAL_F)		SAL_F ← 2000
+
+Entre valor da porcentagem para o aumento 15<enter>
+	Ler(PORC_A)		PORC_A←15
+	
+	Entre porcentagem de impostos 8<enter>
+	Ler (PORC_IMP)    	PORC_IMP←8
+
+	VAL_A←(2000*15)/100 ←300
+	VAL_A←30000/100 
+	VAL_A←300
+
+	SAL_A←SAL_F+ VAL_A
+	SAL_A←2000+300		
+	SAL_A ←2300
+
+	VAL_IMP←(SAL_A *PORC_IMP)/100
+	VAL_IMP←(2300*8)/100	VAL_IMP←184
+	
+	SAL_F← SAL_A – VAL_IMP
+	SAL_F←2300-184
+	SAL_F←2116
+
+	Salario Inicial R$ 2.000,00
+	O  aumento de 15% é de R$300
+	O salário com o aumento é R$2300
+	Desconto de imposto de 8% no valor de 
+            R$184
+	Salario Final R$2.116,00
+FIM	 
+Exercício 5
+PSEUDOCÓDIGO
+Variáveis de entrada: V1, V2, V3, TOT_V, TOT_N,
+Variáveis de saída: V1, V2, V3, TOT_V, TOT_N, real, inteiro
+Variáveis auxiliares: AUX_TOT_V, QUOCIENTE
+INÍCIO
+	DECLARE V1, V2, V3, TOT_V, RESTO, 	AUX_TOT_V , inteiro, real: real
+	TOT_N, QUOCIENTE: inteiro
+	
+	Escrever(“Valor compra Carlos: R$”)
+	Ler(V1)
+	Escrever(“Valor compra André: R$”)
+	Ler(V2)
+	Escrever(“Valor compra Felipe: R$”)
+	Ler(V3)
+Escrever(“Valor total da compra: R$“)
+Ler(TOT_V)
+Escrever(“Número de pessoas para dividir a conta: “)
+Ler(TOT_N)
+
+	TOT_V ← V1 + V2 + V3
+AUX_TOT_V ← TOT_V
+QUOCIENTE ← 0 
+
+ENQUANTO (AUX_TOT_V >= TOT_N)
+FAÇA 
+    AUX_TOT_V ← AUX_TOT_V – TOT_N
+    QUOCIENTE ← QUOCIENTE + 1
+FIM-ENQUANTO
+    RESTO  ← AUX_TOT_V
+
+inteiro ← (TOT_V – RESTO)/TOT_N 
+real ←  inteiro + resto 
+Escrever(“Carlos gastou R$”, V1)
+Escrever(“André gastou R$”, V2)
+Escrever(“Felipe gastou R$”, V3)
+Escrever(“Total a dividir entre os”, TOT_N,  “ R$”, TOT_V)
+Escrever(“Carlos e André irão pagar R$”, inteiro, “ cada um”)
+Escrever(“Felipe irá pagar R$”, real)
+
+FIM
+
+ TESTE DE MESA 				DADOS
+							V1 = 2.3
+							V2 = 2
+							V3 = 3.5
+	
+						
+INICIO
+	
+Valor compra Carlos: R$51.5 <enter>
+Ler(V1)		V1 ← 2.3
+
+Valor compra André: R$25.03 <enter>
+Ler(V2)		V2 ← 2
+
+Valor compra Felipe: R$25 <enter>
+Ler(V3)		V3 ← 3.5
+	
+
+Valor total da compra: R$7.8 <enter>
+Ler(TOT_V)		TOT_V ← 7.8
+
+Número de pessoas para dividir a conta: 3 <enter>
+LER(TOT_N)		TOT_N ← 3
+
+TOT_V ← V1 + V2 + V3
+TOT_V ← 2.3 + 2 + 3.5 	TOT_V←7.8
+AUX_TOT_V ← TOT_V
+AUX_TOT_V ← 7.8
+QUOCIENTE ← 0 
+
+Enquanto(AUX_TOT_V >= TOT_N)
+Enquanto(7.8 >= 3) (V)
+	FAÇA 
+	AUX_TOT_V ← AUX_TOT_V – TOT_N
+	AUX_TOT_V ←7.8 – 3
+	AUX_TOT_V ←4.8
+Fim-enquanto
+
+Enquanto(4.8 >= 3) (V)
+	FAÇA 
+	AUX_TOT_V ← AUX_TOT_V – TOT_N
+	AUX_TOT_V ←4.8 – 3
+	AUX_TOT_V ←1.8
+Fim-enquanto
+{CONTINUACAO TESTE DE MESA EX. 5}
+
+Enquanto(1.8 >= 3) FALSO SE DEIXA DE FAZER O BLOCO DE INTERAÇÃO
+Fim-enquanto
+
+ 	QUOCIENTE ← QUOCIENTE + 1
+	QUOCIENTE ← 0 + 1       QUOCIENTE ← 1
+
+RESTO  ← AUX_TOT_V
+RESTO ← 1.8
+
+inteiro ← 	(TOT_V – RESTO)/TOT_N 
+inteiro	←	(7.8-1.8)/3
+inteiro 	←  6/3		inteiro← 2 
+
+real ←  inteiro + resto
+real ← 2 + 1.8		real ← 3.8
+Carlos gastou R$2.3
+André gastou R$2
+Felipe gastou R3.5
+Total a dividir entre os 3  R$7.8
+Carlos e André irão pagar R$2 cada um
+Felipe irá pagar R$3.8
+FIM
+
+
+
+
+
+ 
+Exercício 6
+PSEUDOCÓDIGO
+Variáveis de entrada: QNTD_S, QNTD_Q, PESO_Q, QNTD_P, PESO_P, QNTD_H, PESO_H
+Variáveis de saída: : QNTD_S, QNTD_Q, PESO_Q, QNTD_P, PESO_P, QNTD_H, PESO_H, TOT_PESO_P, TOT_PESO_Q, TOT_PESO_H
+
+INICIO
+	DECLARE QNTD_Q, QNTD_P, QNTD_H, 	QNTD_S: inteiro
+	PESO_Q, PESO_P, PESO_H: real
+	
+Escrever(“Digite a quantidade de sanduíches desejados: ”)
+Ler(QNTD_S)
+
+Escrever (“Quantidade de fatias de queijo: ”)
+Ler (QNTD_Q)
+ESCREVA(“Peso de cada fatia de queijo em gramas: ”)
+Ler (PESO_Q)
+
+Escrever(“Quantidade de fatias de presunto: ”)
+Ler(QNTD_P)
+Escrever (“Peso de cada fatia de presunto em gramas: ”) 
+Ler(PESO_P)
+
+Escrever(“Quantidade de rodelas de hambúrguer: ”)
+Ler(QNTD_H)
+Escrever(“Peso de cada rodela de hambúrguer em gramas: ”)
+Ler(PESO_H)
+
+TOT_PESO_Q← QNTD_Q*(PESO_Q/1000)*QNTD_S
+TOT_PESO_P ← QNTD_P*(PESO_P/1000) *QNTD_S
+TOT_PESO_H ← QNTD_H*(PESO_H/1000) *QNTD_S
+
+Escrever (“Para ”, QNTD_S , “ sanduíche(s), são necessários: ”, TOT_PESO_Q ,“ kg de queijo, ”, TOT_PESO_P ,“ kg de presunto e ”, TOT_PESO_H ,“ kg de hambúrguer”. ) 
+FIM
+Exercício 6				DADOS 
+TESTE DE MESA				1
+						2 
+						50g
+						1
+						50g
+INICIO					1
+						100
+Digite a quantidade de sanduíches desejados:  1 <enter>
+Ler(QNTD_S)		QNTD_S←1 
+
+ Quantidade de fatias de queijo: 2<enter>
+Ler(QNTD_Q)	QNTD_Q←2
+Peso de cada fatia de queijo em gramas: 50 <enter>
+Ler(PESO_Q)		PESO_Q←50
+
+ Quantidade de fatias de presunto: 1<enter>
+Ler(QNTD_P)		QNTD_P←1
+ Peso de cada fatia de presunto em gramas: 50<enter>
+Ler(PESO_P)		PESO_P←50
+
+ Quantidade de rodelas de hambúrguer: 1<enter>
+Ler(QNTD_H)	QNTD_H←1
+ Peso de cada rodela de hambúrguer em gramas: 100<enter>
+Ler(PESO_P)		PESO_P←100
+
+TOT_PESO_Q ← QNTD_Q*(PESO_Q/1000)*QNTD_S
+TOT_PESO_Q ← 2*(50/1000)*1
+TOT_PESO_Q ← 0.1
+TOT_PESO_P ← QNTD_P*(PESO_P/1000) *QNTD_S
+TOT_PESO_P ← 1*(50/1000)*1
+TOT_PESO_P ← 0.05
+TOT_PESO_H ← QNTD_H*(PESO_H/1000) *QNTD_S
+TOT_PESO_H ← 1*(100/1000)*1
+TOT_PESO_H ← 0.1
+
+ “Para 1  sanduíche(s), são necessários: 0.1kg de queijo, 0.05kg de presunto e 0.1kg de hambúrguer”.
+FIM
+Exercício 7
+PSEUDOCÓDIGO
+Variáveis de entrada: QNTD_F, QNTD_ID, P_ID, QNTD_ALI, P_ALI
+Variáveis de saída: QNTD_F, QNTD_ID, P_ID, QNTD_ALI, P_ALI, TOTQ_ID, TOTQ_ALI, TOTP_ID, TOTP_ALI, TOTP
+
+INÍCIO
+DECLARE QNTD_F, QNTD_ID, QNTD_ALI, TOTQ_ID, TOTQ_ALI: inteiro
+P_ID, P_ALI, TOTP_ID, TOTP_ALI, TOTP: real  
+
+Escrever(“Digite a quantidade de frangos: “)
+Ler(QNTD_F)
+Escrever (“Quantidade de anéis com chip de identificação no pé direito: “)
+Ler (QNTD_ID)
+Escrever(“Valor de cada anel com chip de identificação: “)
+Ler (P_ID)
+Escrever(“Quantidade de anéis com chip de alimentação: “)
+Ler (QNTD_ALI)
+Escrever(“Valor de cada anel com chip de alimentação: ”)
+Ler(P_ALI) 
+
+TOTQ_ID	←	QTND_F * QNTD_ID
+TOTQ_ALI	←         QTND_F*QNTD_ALI
+TOTP_ID 	←	TOTQ_ID*P_ID
+TOTP_ALI 	←	TOTQ_ALI*P_ALI
+TOTP		←        TOTP_ID+TOTP_ALI
+
+Escrever(“Quantidade de frangos: “, QNTD_F )
+Escrever(“Quantidade de anéis pé direito: “, TOTQ_ID )
+Escrever(“Quantidade de anéis pé esquerdo: “, TOTQ _ALI )
+Escrever(”Preço a pagar pelo anel com chip de identificação: R$”, TOTP_ID)
+Escrever(“Preço a pagar pelo anel com chip de alimentação: R$”, TOTP_ALI )
+Escrever(”Preço total para marcar todos os frangos: R$”, TOTP)
+
+FIM	
+
+
+Exercício 7 			DADOS	1
+TESTE DE MESA				1
+						2	
+					R$4.00
+					R$3.50
+INÍCIO					
+Digite a quantidade de frangos: 1<entre>
+Ler(QNTD_F)		QNTD_F←1
+Quantidade de anéis com chip de identificação no pé direito: 1<entre>
+Ler(QNTD_ID)	QNTD_ID←1
+Valor de cada anel com chip de identificação: 4.00<enter>
+Ler(P_ID)		P_ID←4.00
+ Quantidade de anéis com chip de alimentação: 2<enter>
+Ler(QNTD_ALI)	QNTD_ALI←2
+ Valor de cada anel com chip de alimentação: 3.50<enter>
+Ler(P_ALI)		P_ALI←3.50
+
+  TOTQ_ID ← QTND_F * QNTD_ID
+TOTQ_ID ← 1 * 1	TOTQ_ID ← 1
+  TOTQ_ALI ← QTND_F*QNTD_ALI
+TOTQ_ALI ←1*2	TOTQ_ALI ← 2
+  TOTP_ID ← TOTQ_ID*P_ID
+TOTP_ID ←1*4	TOTP_ID ← 4
+  TOTP_ALI ← TOTQ_ALI*P_ALI
+TOTP_ALI ←2*3.5	TOTP_ALI ← 7
+
+TOTP ← TOTP_ID+TOTP_ALI
+
+	{CONTINUACAO TESTE DE MESA EX. 	7}
+TOTP ← 4 + 7		TOTP ← 11
+
+	Quantidade de frangos: 1
+	Quantidade de anéis pé direito: 1
+	Quantidade de anéis pé esquerdo: 	2
+	Preço a pagar pelo anel com chip de 	identificação: R$4
+	Preço a pagar pelo anel com chip de 	alimentação: R$7
+	Preço total para marcar todos os frangos: 	R$ 11
+FIM
+ 
+
+Exercício 8
+PSEUDOCÓDIGO
+Variáveis de entrada: G1, G2, G3 
+Variáveis de saída: G1, G2, G3, G1_L, G2_L, G3_L, TOT_L
+
+INÍCIO
+	DECLARE	G1, G2, G3, CONV_L: inteiro
+	TOT_L: real
+
+
+Escrever(“Quantidade de latas de 350ml: “)
+Ler(G1)
+
+Escrever (“Quantidade de garrafas em ml: “)
+Ler (G2)
+
+
+Escrever (“Quantidade de garrafas de 2L: “)
+Ler (G3)
+
+CONV_L   ← 1000
+G1_L       ← G1*(350/CONV_L)
+G2_L       ← G2*(600/CONV_L)
+G3_L       ← G3*2
+TOT_L      ← G1_L + G2_L + G3
+
+	Escrever (“Compra de “, G1 ,” lata(s) de 350ml, “, G1 ,”garrafa(s) de  600 ml e “, G3 ,” garrafa(s) de 2L. Totalizando”, TOT_L, “L” )
+
+FIM
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exercício 8 			DADOS
+TESTE DE MESA 			1
+					350
+					1
+					600
+					1
+INICIO				2
+
+ Quantidade de latas de 350ml: 1<enter>
+Ler(G1)	G1←1
+ 
+Quantidade de garrafas de 600ml: 1<enter>
+Ler(G2)	G2←1
+
+ Quantidade de garrafas de 2L: 1<enter>
+Ler(G3)	G3←1
+
+CONV_L   ← 1000
+
+G1_L  ← G1*(350/CONV_L)
+G1_L ← 1*(350/1000)	G1_L ← 0.35
+
+G2_L   ← G2*(600/CONV_L)
+G2_L   ← 1*(600/1000)	G2_L  ← 0.6
+
+G3_L   ← G3*2
+G3_L   ← 1*2		G3_L  ← 2
+
+TOT_L  ← G1_L + G2_L + G3
+TOT_L ← 0.350 + 0.60 + 2	TOT_L ← 2.95
+
+“Compra de 1 lata(s) de 350ml, 1 garrafa(s) de 
+600 ml e 1 garrafa(s) de 2L. Totalizando 2.95L”  
+
+FIM
+ 
+
+Exercício 9
+PSEUDOCÓDIGO 
+
+Variáveis de entrada:  SAL, C1, C1_PERC, C2, C2_PERC
+Variáveis de saída: SAL, C1, C1_PERC, C2, C2_PERC, C1_MULTA, C2_MULTA, TOT_MULTA, TOT_C, SAL_RESTO
+
+INÍCIO
+DECLARE	
+SAL, C1, C2, C1_PERC, C2_PERC,  SAL_RESTO, C1_MULTA, C2_MULTA TOT_MULTA  TOT_C: real
+			
+Escrever(“Digite salário: “)
+Ler(SAL)
+Escrever(“Valor da conta 1: “)
+Ler(C1)
+Escrever(“Porcentagem da multa para conta 1: “)
+Ler(C1_PERC)
+Escrever(“Valor da conta 2: “)
+Ler(C2)
+Escrever(“Porcentagem da multa para conta 2: “)
+Ler(C2_PERC)
+
+C1_MULTA ← (Cl*C1_PERC)/100
+C2_MULTA ← (C2*C2_PERC)/100
+TOT_MULTA  ← C1_MULTA + C2_MULTA
+TOT_C        ← C1 + C2 + TOT_MULTA
+SAL_RESTO   ← (SAL – TOT_C)
+
+Escrever(“Salário de  R$“, SAL)
+Escrever(“Conta 1 de R$”, C1 , “ com multa de ” , C1_PERC, “%”, “ no valor de R$”, C1_MULTA)
+
+Escrever(”Conta 2 de R$”, C2 ,“ com multa de “, C2_PERC ,“%  no valor de R$”, C2_MULTA) 
+
+Escrever(“O total das multas é de R$”, TOT_MULTA
+Escrever(” O valor total a pagar é R$”, TOT_C)
+Escrever(“O restante do salário é de R$”, SAL_RESTO)
+FIM
+
+Exercício 9		DADOS	1200 
+TESTE DE MESA			200
+			120
+			2
+			2
+INICIO		
+
+Digite salário: 1200<enter>
+Ler(SAL)		SAL←1200
+Valor da conta 1: 200<enter>
+Ler(C1)		C1←1
+Porcentagem da multa para conta 1: 2
+Ler(C1_PERC)	C1_PERC←2
+Valor da conta 2: 120<enter>
+Ler(C2)		C2←120
+Porcentagem da multa para conta 2: 2<enter>
+Ler(C2_PERC)	C2_PERC←2
+
+C1_MULTA ← (CL*C1_PERC)/100
+C1_MULTA ← (200*2)/100	C1_MULTA← 4
+C2_MULTA ← (C2*C2_PERC)/100
+C2_MULTA ← (120*2)/100	C2_MULTA←2.4
+
+TOT_MULTA  ← C1_MULTA + C2_MULTA
+TOT_MULTA  ← 4 + 2.4	TOT_MULTA  ← 6.4
+
+TOT_C ← C1 + C2 + TOT_MULTA
+TOT_C ← 200 + 120 + 6.4	TOT_C ← 326.4
+
+SAL_RESTO   ← (SAL – TOT_C)
+SAL_RESTO   ←1200 – 326.4
+SAL_RESTO   ← 873.6
+
+Salário de  R$1200 
+
+{CONTINUACAO TESTE DE MESA EX. 	9}
+Conta 1 de R$200 com multa de 2% no valor de R$4 	
+
+Conta 2 de R$120 com multa de 2% no valor de R$2.4 
+O total das multas é de R$6.4 
+O valor total a pagar é R$326.4
+O restante do salário é de R873.6
+FIM
