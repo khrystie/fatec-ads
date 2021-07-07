@@ -1,0 +1,17 @@
+ALP - Prof. Takeshi
+Lista de exercícios - Enquanto, Repita e Para
+02/2021 
+
+
+Desenvolver o Diagrama de Blocos, português estruturado, teste de mesa e codificação em C++ utilizando as estruturas de repetição Enquanto, Repita e Para
+
+1-	Mostrar o intervalo de 1 a 50
+2-	Mostrar os impares entre 10 e 80 o a somatória deles.
+
+
+Desenvolver o Diagrama de Blocos, português estruturado, teste de mesa e codificação em C++ , escolher a melhor estrutura para a solução dos problemas.
+
+1-	Solicitar um valor inteiro positivo ( consistir) na base decimal e mostrar o binário.
+2-	Fatorial de um valor informado ( consistir para maior que zero e menor que 14)
+3-	Mostrar se um número é ou não primo ( consistir )
+4-	Mostrar apenas o valorr do termo da posição informada da série de Fibonacci
