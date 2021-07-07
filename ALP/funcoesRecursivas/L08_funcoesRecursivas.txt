@@ -1,0 +1,15 @@
+ADS - ALP - 02/2021
+Prof. Takeshi
+Lista de Exercícios Recursividade
+
+Desenvolver o Diagrama de Blocos, português estruturado, teste de mesa e codificação em C++ para os seguintes enunciados:
+Obs: para fazer programas recursivos deve-se sempre criar funções  
+
+1)	Fatorial de um número digitado
+2)	Mostrar os números pares de 0 até o número informado
+3)	Mostrar a soma de todos os números ímpares que são múltiplos de três e que estão entre 0 e o números digitado.
+4)	Mostrar a soma dos números inteiros entre 0 e o número digitado.
+5)	Solicitar o termo da serie de Fibonacci e mostrar o valor do termo.
+    	Exemplo:  o 6º termo da série é 8
+6)	Defina um programa recursivo para, dado um número n, imprimi-lo em base binária.
+7) Soma de dois números naturais, através de incrementos sucessivos
