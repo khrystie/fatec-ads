@@ -1,18 +1,13 @@
-const a = 1, b = 1, c = 5, d = 6;
-const e = 3, f = 3, g = 7, h = 7;
 
-const i = Math.max(a, e); //3
-const j = Math.max(b, f); //3
-const k = Math.min(c, g); //5
-const l = Math.min(d, h);// 6
+/* plano cartesiano */
+const ax1=1, ay1=1, ax2=5, ay2=6;
+const bx1=3, by1=3, bx2=7, by2=7;
 
-//i >= k  -> f 
-//j>= l -> f
-//(5-3)*(6-3) = 6
+const maxX1 = Math.max(ax1,bx1); //3
+const maxY1 = Math.max(ay1,by1); //3
+const minX2 = Math.min(ax2,bx2); //5
+const minY2 = Math.min(ay2,by2);// 6
 
-if (i >= k || j >= l) console.log(0);
-else console.log((k - i) * (l - j));
-
-
-
+if(maxX1 >= minX2 || maxY1>= minY2) console.log(0);
+else console.log((minX2-maxX1)*(minY2-maxY1));
 
